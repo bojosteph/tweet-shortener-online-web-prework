@@ -1,6 +1,6 @@
 
 # Write your code here.
-def word_substituter(tweet)
+def dictionary(tweet)
   words = tweet.split(" ")
   short_tweet = []
 
@@ -29,7 +29,7 @@ end
 
 def bulk_tweet_shortener(tweets)
   tweets.each do |tweet|
-    tweet = word_substituter(tweet)
+    tweet = dictionary(tweet)
     puts "#{tweet}"
   end 
 end
